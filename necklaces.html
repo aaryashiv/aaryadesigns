@@ -9,6 +9,8 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	
 </head>
 <body>
 
@@ -56,7 +58,7 @@
 
 	<div id="body">
 		<div class="container">
-			<div class="pagination">
+			<!-- <div class="pagination">
 				<ul>
 					<li><a href="#"><span class="ico-prev"></span></a></li>
 					<li><a href="#">1</a></li>
@@ -66,7 +68,7 @@
 					<li><a href="#">5</a></li>
 					<li><a href="#"><span class="ico-next"></span></a></li>
 				</ul>
-			</div>
+			</div> -->
 			<div class="products-wrap">
 <!--				<aside id="sidebar">
 					<div class="widget">
@@ -107,7 +109,7 @@
 						</fieldset>
 					</div>
 				</aside>  -->
-				<div id="content">
+				<!-- <div id="content">
 					<section class="products">
 						<article>
 							<a><img src="images/necklace/NECKLACE_1.jpg" alt=""></a>
@@ -159,10 +161,32 @@
 						</article>
 
 						</section>
-				</div>
+				</div> -->
+				<div id="test-list">
+    
+    <ul class="list">
+      <li><a><img src="images/necklace/NECKLACE_1.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_2.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_3.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_4.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_5.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_6.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_7.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_8.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_9.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_10.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_11.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_12.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_13.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_14.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_15.jpg" alt=""></a></li>
+	  <li><a><img src="images/necklace/NECKLACE_16.jpg" alt=""></a></li>	  
+    </ul>
+    <ul class="pagination"></ul>
+  </div>
 				<!-- / content -->
 			</div>
-			<div class="pagination">
+	<!-- 		<div class="pagination">
 				<ul>
 					<li><a href="#"><span class="ico-prev"></span></a></li>
 					<li><a href="#" class="active">1</a></li>
@@ -174,7 +198,7 @@
 				</ul>
 			</div>
 		</div>
-		<!-- / container -->
+	 -->	<!-- / container -->
 	</div>
 	<!-- / body -->
 
@@ -226,5 +250,15 @@
 	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+	var monkeyList = new List('test-list', {
+  valueNames: ['name'],
+  page: 8,
+  pagination: true
+});
+	
+	</script>
+	
+	</script>
 </body>
 </html>
