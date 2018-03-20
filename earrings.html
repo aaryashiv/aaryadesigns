@@ -6,6 +6,7 @@
 	<title>Aarya’s jewelry</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<link rel="stylesheet" media="all" href="css/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -32,7 +33,7 @@
 			<div class="trigger"></div>
 			<ul>
 				<li><a href="products.html">New collection</a></li>
-				<li><a href="products.html">necklaces</a></li>
+				<li><a href="products.html">earrings</a></li>
 				<li><a href="products.html">earrings</a></li>
 				<li><a href="products.html">Rings</a></li>
 				<li><a href="products.html">Gift cards</a></li>
@@ -56,6 +57,7 @@
 
 	<div id="body">
 		<div class="container">
+<!--
 			<div class="pagination">
 				<ul>
 					<li><a href="#"><span class="ico-prev"></span></a></li>
@@ -67,6 +69,7 @@
 					<li><a href="#"><span class="ico-next"></span></a></li>
 				</ul>
 			</div>
+-->
 			<div class="products-wrap">
 <!--				<aside id="sidebar">
 					<div class="widget">
@@ -107,6 +110,7 @@
 						</fieldset>
 					</div>
 				</aside>  -->
+<!--
 				<div id="content">
 					<section class="products">
 						<article>
@@ -160,8 +164,32 @@
 
 						</section>
 				</div>
+-->
 				<!-- / content -->
+                <div id="test-list">
+    
+    <ul class="list">
+      <li><a><img src="images/earring/EARRING_1.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_2.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_3.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_4.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_5.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_6.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_7.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_8.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_9.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_10.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_11.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_12.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_13.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_14.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_15.jpg" alt=""></a></li>
+	  <li><a><img src="images/earring/EARRING_16.jpg" alt=""></a></li>	  
+    </ul>
+    <ul class="pagination"></ul>
+  </div>
 			</div>
+<!--
 			<div class="pagination">
 				<ul>
 					<li><a href="#"><span class="ico-prev"></span></a></li>
@@ -173,6 +201,7 @@
 					<li><a href="#"><span class="ico-next"></span></a></li>
 				</ul>
 			</div>
+-->
 		</div>
 		<!-- / container -->
 	</div>
@@ -226,5 +255,13 @@
 	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+    <script>
+	var monkeyList = new List('test-list', {
+  valueNames: ['name'],
+  page: 8,
+  pagination: true
+});
+	
+	</script>
 </body>
 </html>
